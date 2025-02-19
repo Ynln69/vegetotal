@@ -1,194 +1,194 @@
-.tasting-content {
+.tasting-wrapper {
   display: flex;
-  justify-content: space-between;
+  flex-direction: column;
   align-items: center;
   max-width: 1100px;
   margin: 0 auto;
-  gap: 40px;
 }
-
-.tasting-list {
-  list-style: none;
-  padding: 20px 0 0;
+.tasting-info {
+  display: flex;
+  gap: 10px;
+  justify-content: center;
+  margin-bottom: 40px;
 }
-
-.tasting-list li {
-  font-size: 1.1rem;
-  margin-bottom: 10px;
-}
-
-.tasting-image {
+.tasting-card {
+  background: rgba(255, 255, 255, 0.1);
+  padding: 25px;
+  border-radius: 10px;
+  text-align: center;
   flex: 1;
+  box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.2);
+  transition: transform 0.3s;
+}
+.tasting-card:hover {
+  transform: scale(1.05);
+}
+.tasting-icon img {
+  width: 60px;
+  margin-bottom: 15px;
+}
+.tasting-cta {
+  background: var(--primary-color);
+  padding: 30px;
+  border-radius: 10px;
+  max-width: 800px;
   text-align: center;
 }
-
-.tasting-image img {
-  max-width: 100%;
-  border-radius: 10px;
-  box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.2);
-}
-
-@media (max-width: 768px) {
-  .tasting-content {
-    flex-direction: column;
-    text-align: center;
-  }
-
-  .tasting-text {
-    font-size: 1.1rem;
-  }
-}
-
-.services {
-  max-width: 1200px;
-  overflow: hidden;
-}
-.services-container {
-  display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
-  gap: 20px;
-  justify-items: end;
-  @media (min-width: 1024px) {
-    grid-template-columns: 1fr 1fr;
-  }
-}
-.services-item {
-  display: grid;
-  gap: 15px;
-  grid-template-columns: 150px 1fr;
-  align-items: start;
-}
-.services-image {
-  width: 100%;
-  height: 180px;
-  background-color: var(--third-color);
-  @media (min-width: 1280px) {
-    width: 88%;
-    height: 350px;
-  }
-}
-.services-image img {
-  width: 100%;
-  max-width: 150px;
-  height: 150px;
-  object-fit: cover;
-}
-.services-content {
-  display: flex;
-  flex-direction: column;
-  gap: 20px;
-  height: 100%;
-}
-.services-heading {
-  font-size: 16px;
+.cta-text {
+  font-size: 1.2rem;
+  margin-bottom: 20px;
   font-weight: bold;
-  color: var(--secondory-color);
-  margin-bottom: 10px;
 }
-.services-text {
-  font-size: 14px;
-  color: var(--third-color);
+@media (max-width: 768px) {
+  .tasting-info {
+    flex-direction: column;
+  }
+}
+
+.tasting-advantages-wrapper {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 20px;
+  max-width: 1100px;
+  margin: 0 auto;
+}
+.tasting-advantage {
+  position: relative;
+  background-size: cover;
+  background-position: center;
+  border-radius: 10px;
+  overflow: hidden;
+  height: 250px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: transform 0.3s ease-in-out;
+}
+.tasting-advantage:hover {
+  transform: scale(1.05);
+}
+.advantage-content {
+  background: rgba(228, 228, 228, 0.8);
+  padding: 20px;
+  border-radius: 10px;
+  text-align: center;
+  max-width: 80%;
+}
+.advantage-title {
+  font-size: 1.4rem;
+  font-weight: bold;
+  margin-bottom: 10px;
+  color: var(--primary-color);
+}
+.advantage-text {
+  font-size: 1rem;
+  line-height: 1.5;
+  color: var(--light-color);
+}
+@media (max-width: 768px) {
+  .tasting-advantages-wrapper {
+    grid-template-columns: 1fr;
+  }
+}
+
+
+.reviews-slider {
+  display: flex;
+  gap: 20px;
+  overflow: hidden;
+  max-width: 900px;
+  margin: 0 auto;
+}
+
+.review-card {
+  flex: 1;
+  background: var(--section-bg);
+  padding: 20px;
+  border-radius: 10px;
+  text-align: left;
+  box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.2);
+  transition: transform 0.3s;
+}
+
+.review-card:hover {
+  transform: scale(1.05);
+}
+
+.review-header {
+  display: flex;
+  align-items: center;
+  gap: 15px;
   margin-bottom: 15px;
 }
 
-.testimonial {
-  position: relative;
-}
-.testimonial-container {
-  width: 100%;
-  height: auto;
-  position: relative;
-  overflow: hidden;
-  @media (min-width: 768px) {
-    height: 180px;
-  }
-}
-.testimonial-item {
-  display: none;
-  opacity: 0;
-  transition: opacity var(--time-function);
-}
-.testimonial-item.active {
-  display: flex;
-  flex-direction: column;
-  gap: 20px;
-  justify-content: space-around;
-  opacity: 1;
-  @media (min-width: 768px) {
-    flex-direction: row;
-  }
-}
-.testimonial-profile {
-  display: flex;
-  align-items: center;
-  gap: 10px;
-  @media (min-width: 768px) {
-    flex-direction: column;
-  }
-}
-.profile-img {
-  width: 70px;
-  height: 70px;
-  padding: 5px;
-  background-color: var(--second-bg-color);
-  border-radius: 50%;
-}
-.profile-info {
-  font-size: 14px;
-  color: var(--main-color);
-}
-.profile-name {
-  margin-bottom: 10px;
-  font-size: 18px;
-  font-weight: bold;
-}
-.profile-date {
-  color: var(--third-color);
-  font-size: 14px;
-}
-.testimonial-text {
-  width: 100%;
-  max-width: 550px;
-  font-size: clamp(1.375rem, 1.617vw + 0.957rem, 2.25rem);
-  line-height: clamp(2.063rem, 1.594vw + 1.65rem, 2.925rem);
-  font-weight: bold;
-  color: var(--main-color);
-  margin-top: 10px;
-}
-.testimonial-controls {
-  display: flex;
-  align-items: center;
-  justify-content: end;
-  margin-top: 20px;
-  gap: 8px;
-}
-.prev-btn,
-.next-btn {
+.review-avatar {
   width: 50px;
   height: 50px;
-  border: none;
-  padding: 8px 12px;
   border-radius: 50%;
+  object-fit: cover;
+}
 
-  color: var(--logo-color);
-  background-color: var(--highlight-color);
-  font-size: 20px;
-  transition: background-color var(--time-function);
-  &:hover {
-    background-color: var(--third-color);
-  }
+.review-info {
+  text-align: left;
 }
-.next-btn .dots {
+
+.review-name {
+  font-size: 1.2rem;
+  font-weight: bold;
+}
+
+.review-date {
+  font-size: 0.9rem;
+  color: var(--text-color);
+}
+
+.review-text {
+  font-size: 1rem;
+  line-height: 1.5;
+}
+
+.review-controls {
   display: flex;
-  gap: 6px;
+  justify-content: center;
+  align-items: center;
+  margin-top: 20px;
+  gap: 10px;
 }
-.dot {
-  width: 10px;
-  height: 10px;
-  background-color: var(--border-color);
-  border-radius: 50%;
+
+.prev-btn,
+.next-btn {
+  background: var(--primary-color);
+  color: var(--light-color);
+  border: none;
+  padding: 10px 15px;
+  font-size: 1.5rem;
+  border-radius: 5px;
   cursor: pointer;
+  transition: 0.3s;
 }
+
+.prev-btn:hover,
+.next-btn:hover {
+  background: var(--accent-color);
+}
+
+.dot {
+  width: 12px;
+  height: 12px;
+  background: var(--text-color);
+  border-radius: 50%;
+  display: inline-block;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
 .dot.active {
-  background-color: var(--accent-color);
+  background: var(--primary-color);
+  transform: scale(1.2);
+}
+
+@media (max-width: 768px) {
+  .reviews-slider {
+    flex-direction: column;
+  }
 }

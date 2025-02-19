@@ -1,15 +1,15 @@
 :root {
   --font-family: "Merriweather", serif;
   --second-family: "Special Elite", serif;
-  
-  --primary-color: #de0505;
+
+  --primary-color: #39b54a;
   --light-color: #ffffff;
-  --background-light: #622a1d;
-  --background-dark: #2d2c2c;
-  --section-bg: #ff8a8a;
-  --secondary-color: #292929;
-  --text-color: #f2f2f2;
-  --accent-color: #b30e0e;
+  --background-light: #d9f7be;
+  --background-dark: #2d6a4f;
+  --section-bg: #f4e285;
+  --secondary-color: #ffb703;
+  --text-color: #333333;
+  --accent-color: #0e5f35;
 
   --time-function: 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }

@@ -4,7 +4,7 @@ html {
 body {
   margin: 0;
 
-  background-color: var(--background-dark);
+  background-color: var(--light-color);
   color: var(--text-color);
   font-family: var(--font-family);
   font-size: 14px;
