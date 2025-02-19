@@ -1,0 +1,15 @@
+:root {
+  --font-family: "Merriweather", serif;
+  --second-family: "Special Elite", serif;
+  
+  --primary-color: #de0505;
+  --light-color: #ffffff;
+  --background-light: #622a1d;
+  --background-dark: #2d2c2c;
+  --section-bg: #ff8a8a;
+  --secondary-color: #292929;
+  --text-color: #f2f2f2;
+  --accent-color: #b30e0e;
+
+  --time-function: 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}

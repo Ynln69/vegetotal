@@ -1,0 +1,92 @@
+.signup-section {
+  background: url("../../assets/img/contact.jpg")
+    center/cover no-repeat;
+  padding: 50px 0;
+  color: #fff;
+  text-align: center;
+}
+.signup-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  max-width: 1100px;
+  margin: 0 auto;
+  padding: 30px;
+  background: rgba(0, 0, 0, 0.7);
+  border-radius: 15px;
+  box-shadow: 0px 5px 20px rgba(0, 0, 0, 0.4);
+}
+.signup-info {
+  flex: 1;
+  padding: 20px;
+  text-align: left;
+}
+.signup-benefits li {
+  margin-bottom: 10px;
+}
+.signup-form-container {
+  flex: 1;
+  padding: 20px;
+}
+.signup-form {
+  max-width: 350px;
+  margin: 0 auto;
+  padding: 20px;
+  background: rgba(255, 255, 255, 0.1);
+  border-radius: 10px;
+  box-shadow: 0px 4px 10px rgba(255, 255, 255, 0.2);
+}
+.form-group {
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 15px;
+  text-align: left;
+}
+.form-group label {
+  font-weight: bold;
+  margin-bottom: 5px;
+}
+.form-group input {
+  padding: 12px;
+  border: none;
+  border-radius: 5px;
+  font-size: 1rem;
+  background: #fff;
+  color: #333;
+}
+.signup-button {
+  background: var(--accent-color);
+  color: var(--light-color);
+  font-size: 1.2rem;
+  font-weight: bold;
+  padding: 12px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  width: 100%;
+  transition: background 0.3s;
+}
+
+.signup-button:hover {
+  background: var(--background-light);
+}
+
+.success-message {
+  display: none;
+  margin-top: 10px;
+  color: #00ff40;
+  font-weight: bold;
+}
+
+@media (max-width: 768px) {
+  .signup-container {
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .signup-info,
+  .signup-form-container {
+    width: 100%;
+    padding: 20px;
+  }
+}

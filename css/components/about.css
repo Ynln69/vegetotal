@@ -1,0 +1,29 @@
+.about-store {
+  display: grid;
+  gap: 30px;
+  grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+  padding: 10px;
+  @media (min-width: 1024px) {
+    grid-template-columns: 450px 1fr;
+  }
+}
+.about-title {
+  font-size: 28px;
+  font-weight: bold;
+  margin-bottom: 15px;
+}
+.about-item {
+  margin-bottom: 20px;
+  padding-bottom: 15px;
+  border-bottom: 1px solid var(--text-color);
+}
+.about-image {
+  width: 100%;
+  text-align: right;
+}
+.about-image img {
+  max-width: 100%;
+  border-radius: 5px;
+  height: 450px;
+  object-fit: cover;
+}

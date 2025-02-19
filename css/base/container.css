@@ -1,0 +1,12 @@
+.container {
+  width: 100%;
+  max-width: 1440px;
+  margin-left: auto;
+  margin-right: auto;
+  padding-left: clamp(25px, calc(10px + 5vw), 94px);
+  padding-right: clamp(25px, calc(10px + 5vw), 94px);
+}
+.section {
+  padding-top: clamp(30px, calc(10px + 5vw), 80px);
+  padding-bottom: clamp(30px, calc(10px + 5vw), 80px);
+}
